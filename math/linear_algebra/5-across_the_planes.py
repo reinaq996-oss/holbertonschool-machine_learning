@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-""" add 2d matrix """
+"""Write a function that adds two matrices element-wise"""
 
 
 def add_matrices2D(mat1, mat2):
-    """add 2 matrices or return None"""
+    """Adds 2 matrices element-wise"""
     if len(mat1) != len(mat2) or len(mat1[0]) != len(mat2[0]):
         return None
-    try:
-        return [[mat1[idx][i] + mat2[idx][i] for i in range(len(mat1[0]))]
-                for idx in range(len(mat1))]
-    except IndexError:
-        return None
-    
+
+    return [
+        [
+            mat1[i][j]+mat2[i][j]
+            for j in range(len(mat1[0]))
+            ] for i in range(len(mat1))
+    ]
