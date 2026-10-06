@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-""" matrix addition"""
+"""Write a function that adds two arrays element-wise:"""
 
 
 def add_arrays(arr1, arr2):
-    """ adds two arrays and returns them"""
-    try:
-        return [arr1[idx] + arr2[idx] for idx in range(len(arr1))]
-    except IndexError:
+    """The function that adds 2 arrays element-wise"""
+    if len(arr1) != len(arr2):
         return None
-    
+
+    return [arr1[i]+arr2[i] for i in range(len(arr1))]
