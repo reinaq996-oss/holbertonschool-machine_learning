@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
-"""Write a function that calculates the shape of a matrix"""
+"""This script contains a funcion which returns the shape of a matrix"""
 
 
 def matrix_shape(matrix):
-    """Return shape of given list-matrix"""
-    shape = []
-    try:
-        while(len(matrix) > 0):
-            shape.append(len(matrix))
-            matrix = matrix[0]
-    except TypeError:
-        pass
-    return shape
+    """Returns the shape of the patrix"""
+    return calculate_dimension(matrix, [])
+
+
+def calculate_dimension(matrix, shape=[]):
+    """The recursive function which calculates the shape of the matrix"""
+    # base case - matrix is not a list
+    if not isinstance(matrix, list):
+        return shape
+
+    # add length of current reduced list
+    shape.append(len(matrix))
+
+    # call recursively with the first element of the list
+    return calculate_dimension(matrix[0], shape)
