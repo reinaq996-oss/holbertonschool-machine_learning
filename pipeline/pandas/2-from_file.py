@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Load data from a file into a pandas DataFrame."""
 
