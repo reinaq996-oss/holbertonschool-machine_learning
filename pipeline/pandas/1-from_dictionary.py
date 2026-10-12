@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Create a pandas DataFrame from a dictionary."""
 import pandas as pd
 
 data = {
