@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+"""Plot exponential decay using a logarithmic y-axis."""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def change_scale():
+    """Plot C-14 decay over time with a logarithmic y-axis."""
     x = np.arange(0, 28651, 5730)
     r = np.log(0.5)
     t = 5730

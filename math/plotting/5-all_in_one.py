@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+"""Display five plots in one figure."""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def all_in_one():
+    """Create a 3-by-2 grid containing all five plotting examples."""
     y0 = np.arange(0, 11) ** 3
 
     mean = [69, 0]
@@ -63,8 +66,11 @@ def all_in_one():
     ax4.legend(loc='upper right')
 
     ax5 = plt.subplot(3, 2, 5)
-    ax5.hist(student_grades, bins=np.arange(0, 101, 10),
-             edgecolor='black')
+    ax5.hist(
+        student_grades,
+        bins=np.arange(0, 101, 10),
+        edgecolor='black'
+    )
     ax5.set_xlabel("Grades", fontsize='x-small')
     ax5.set_ylabel("Number of Students", fontsize='x-small')
     ax5.set_title("Project A", fontsize='x-small')

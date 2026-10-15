@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
+"""Plot the exponential decay of two radioactive elements."""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def two():
+    """Compare C-14 and Ra-226 decay using two line graphs."""
     x = np.arange(0, 21000, 1000)
     r = np.log(0.5)
     t1 = 5730
