@@ -15,4 +15,3 @@ def scatter():
     plt.ylabel("Weight (lbs)")
     plt.title("Men's Height vs Weight")
     plt.show()
-    

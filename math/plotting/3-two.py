@@ -20,4 +20,3 @@ def two():
     plt.ylim(0, 1)
     plt.legend(loc='upper right')
     plt.show()
-    

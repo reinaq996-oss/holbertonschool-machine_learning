@@ -29,4 +29,3 @@ def bars():
     plt.title("Number of Fruit per Person")
     plt.legend()
     plt.show()
-    
