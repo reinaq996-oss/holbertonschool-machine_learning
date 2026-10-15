@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot a line graph.""" 
+"""Plot a line graph."""
 
 import numpy as np
 import matplotlib.pyplot as plt
